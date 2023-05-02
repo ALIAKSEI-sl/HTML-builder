@@ -22,8 +22,8 @@ async function mergeStyles(pathToStyle, pathToBundle) {
   }
 }
 
+module.exports = mergeStyles;
+
 const pathToBundle = join(__dirname, 'project-dist', 'bundle.css');
 const pathToStyle = join(__dirname, 'styles');
 mergeStyles(pathToStyle, pathToBundle);
-
-module.exports = mergeStyles;
